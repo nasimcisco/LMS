@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leave Management System</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+  <div class="jumbotron text-center">
+    <h1>Leave Management System</h1>
+  </div>
+  
+<form action = "/login" method = "POST"  enctype = "multipart/form-data">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"><strong>Email</strong> <br>
+        <input type="email" name="email" placeholder="Email" size="50" required="">
+        </div>
+      </div>
+        <br>
+        <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"><strong>Password</strong> <br>
+        <input type="password" name="password" placeholder="password" size="50" required="">
+        </div>
+      </div>
+     
+     
+        
+         
+        <br>
+          <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"><strong>Role :</strong>
+          <select name="role" id="" required="" >
+            <option value="">None</option>
+            <option value="admin">Administrator</option>
+            <option value="dean">Dean</option>
+            <option value="head">Head of Department</option>
+            <option value="teacher">Teacher</option>
+            <option value="officer">Officer</option>
+          </select>
+        </div>
+      </div>
+   
+
+  
+ 
+
+     
+      
+       
+      
+        <br>
+        <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+      <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+        </div>
+      </div>
+            <br>
+            <br>
+      
+
+    </div>
+   </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leave Management System</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="">CIIS</a>
+      </div>
+      <ul class="nav navbar-nav navbar-left navbar-dark bg-dark">
+        <li class="active"><a href="/">Home</a></li>
+        {% if role == 'head'  %}
+       <li><a href="/leave_pending_list">Pending List</a></li>
+       <li><a href="/leave_approval_list">Approval List</a></li>
+       {% else %}
+        <li><a href="/leave_form">Add Leave</a></li>
+        <li><a href="/leave_list">Leave List</a></li>
+        {% endif %}
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+<div class="container-fluid">
+  <table class="table table-bordered">
+    <tr><th>Email</th>
+        <th>Leave_from</th>
+        <th>Leave_to</th>
+        <th>Total days</th>
+        <th>Type</th>
+        <th>Approval</th>
+        <th>Head of the Dept.</th>
+    </tr>
+    {% for x in leave_list %}
+    <tr>
+      <th>{{x['email']}}</th>
+      <th>{{x['leave_from']}}</th>
+      <th>{{x['leave_to']}}</th>
+      <th>{{x['days']}}</th>
+      <th>{{x['type']}}</th>
+      <th>{{x['approved']}}</th>
+      <th>{{x['approved_by']}}</th>
+    </tr>
+ 
+  {% endfor %}
+  </table>
+</div>
+
+</body>
+</html>
