@@ -1,0 +1,3 @@
+_id,name,email,password,role,department
+ObjectId("5ceea5124574161c44666b86"),nasim ahmed,nasimcisco@gmail.com,123456,officer,ICTCELL
+ObjectId("5ceeb4094574161c44666b87"),Gautum budda Das,vc@cvasu.ac.bd,12345678,head,ICTCELL

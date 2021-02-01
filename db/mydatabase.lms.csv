@@ -1,0 +1,5 @@
+_id,email,leave_from,leave_to,days,filename,approved,approved_by,type
+ObjectId("5ceff26c32a5c051a9f15259"),nasimcisco@gmail.com,2019-05-30,2019-06-09,10 days, 0:00:00,Leave-Form-for-Teachers.pdf,yes,vc@cvasu.ac.bd,casual
+ObjectId("5cf009f2a7df979f9452f8a5"),nasimcisco@gmail.com,2019-06-15,2019-10-31,138 days, 0:00:00,,no,vc@cvasu.ac.bd,study
+ObjectId("5cf00a45a7df979f9452f8b2"),nasimcisco@gmail.com,2019-06-17,2019-06-18,1 day, 0:00:00,,yes,vc@cvasu.ac.bd,casual
+ObjectId("5cf00c3da7df979f9452f8d8"),nasimcisco@gmail.com,2019-06-20,2019-06-20,0:00:00,,pending,vc@cvasu.ac.bd,casual
